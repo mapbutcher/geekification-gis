@@ -59,16 +59,19 @@
 					</aside>
 				</section>
 
-				<section>
-					<h2>'Beating the Bounds'</h2>
-					<blockquote cite="http://www.strangebritain.co.uk/traditions/bounds.html">
+				<section data-background="http://127.0.0.1:8000/img/mappa_mundi.jpg">
+					<h2 style="color:black;">'Beating the Bounds'</h2>
+					<blockquote style="background-color:rgba(248,248,255,0.7);" cite="http://www.strangebritain.co.uk/traditions/bounds.html">
 						&ldquo; The boy would be suspended upside down and his head gently tapped against the stone or he would be taken by the feet and hands and swung against a tree!.&rdquo;
 						<footer><a href="http://www.strangebritain.co.uk/traditions/bounds.html"> - www.strangebritain.co.uk"</a></footer>
 					</blockquote>
 
 					<aside class="notes">
-						Beating the bounds is an ancient English custom where by younger members of the community are escorted around the boundaries to help share knowledge of where they lay. Apparently such ceremonies were used before maps were common place, as a means to embed an understanding of a jurisdiction. 
-						Hopefully this is a welcome session as the apparently such ceremonies were often followed by "...feasting, drinking and merrymaking"
+						Beating the bounds is an ancient English custom where by younger members of the community are escorted around the boundaries to help share knowledge of where they lay. 
+
+						So a sort of map by memory association, children would be familiarised with the bounds of their village based upon a good old beating at the boundary
+
+						Rest assured I'll refrain from the beating today as we visit the markers around the boundaries of GIS
 					</aside>
 				</section>
 
@@ -111,313 +114,98 @@
 
 					</aside>
 				</section>
-				<section data-background="http://127.0.0.1:8000/img/elasticsearch.png" data-background-size="600px">
-					<p></p>
+				<section data-background="http://127.0.0.1:8000/img/documents.jpg">
+					<p style="padding-top:500px;padding-right:400px;" ><img style="border:0;background:none;" src="http://127.0.0.1:8000/img/elasticsearch.png"></p>
 					<aside class="notes">
 						2. What is disrupting
-						We need to understand what tools best fit our requirements
-						As the volume of our data increases we need better ways to search it. 
+						Elasticsearch is a document orientated search engine based upon the Apache Lucence project. It supports both unstructured and structured search and importantly does so in near real time!
+
+						By using elasticsearch we're able to meet the expectations of our user base, we're enabling search in our applications which matches the search experience they encounter elsewhere on the internet.
+					</aside>
+				</section>
+				<section >
+					<h2></h2>
+					<p></p>
+					<aside class="notes">
+						2. What is disrupting....
+
+						However being able to combine free text search with geo location is the crucial next step for our applications
+
+						Elasticsearch now includes support for spatial datatypes. Not only can we ask for information based upon an attribute of that information, but we can ask for information based upon where it exists.
+
+						Now you could argue - this is not really disruptive, we've been searching for things spatially for years, yes, but....
 					</aside>
 				</section>	
-				<section>
-					<h2 class="em"></h2>
-					<p></p>
+				<section data-background="http://127.0.0.1:8000/img/charlton.jpg">
+					<h2 class="em" style="padding-right:400px; color:white;">"I'll give you my geodatabase when you pry it from my cold dead hands!"</h2>
 					<aside class="notes">
 						3. What might the future look like
 
+						Well I know those in the old guard might be thinking to themselves....you'll not get rid of those spatial databases. However the future is no longer neatly locked into a single stack of technology.
+
+						The future involves more and more data! And as the volume of our data increases we need better ways to search it. 
+
+						We need to understand what tools best fit our requirements. We're backing search technology, not GIS technology when it comes to searching!
 					</aside>
-				</section>			
-				<!-- Example of nested vertical slides -->
+				</section>	
 				<section>
-					<section>
-						<h2>Vertical Slides</h2>
-						<p>
-							Slides can be nested inside of other slides,
-							try pressing <a href="#" class="navigate-down">down</a>.
-						</p>
-						<a href="#" class="image navigate-down">
-							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-						</a>
-					</section>
-					<section>
-						<h2>Basement Level 1</h2>
-						<p>Press down or up to navigate.</p>
-					</section>
-					<section>
-						<h2>Basement Level 2</h2>
-						<p>Cornify</p>
-						<a class="test" href="http://cornify.com">
-							<img width="280" height="326" src="https://s3.amazonaws.com/hakim-static/reveal-js/cornify.gif" alt="Unicorn">
-						</a>
-					</section>
-					<section>
-						<h2>Basement Level 3</h2>
-						<p>That's it, time to go back up.</p>
-						<a href="#/2" class="image">
-							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Up arrow" style="-webkit-transform: rotate(180deg);">
-						</a>
-					</section>
+					<h2 class="em">Marker No. 2. Change</h2>
+					<p></p>
+					<aside class="notes">
+						SECTION INTRO SLIDE						
+					</aside>
+				</section>		
+				<section data-background="http://127.0.0.1:8000/img/great_divide.jpg">
+					<h2 class="em" style="padding-bottom:150px;">The Great Divide.</h2>
+					<p></p>
+					<aside class="notes">
+						1. What does the traditional view look like?
+						
+						We work with alot of organisations which want to know what's changed, when and by who. However this sort of requirement has traditionally been met by big expensive solutions.
+
+						In my first job as a GIS Analyst we used to 'Merge and Post' overnight a long drawn out reconciliation of changes made across all the GIS editors in the organisation.
+
+						These version management solutions have remained the realm of those with deep pockets, and the rest of us have just cobbled along...until.
+
+					</aside>
 				</section>
+				<section data-background="#ffffff">
+					<img style="border:0;background:none;" src="http://127.0.0.1:8000/img/versioncontrol.png">
+					<aside class="notes">
+						2. What is disrupting
+						
+						Software engineers had been using this thing called version control for quite some time to manage source code. Multiple people could edit source code files at the same time and a system would track all these changes as well as provide ways to manage conflict resolution where conflicting changes occurred to the same file.
 
-				<section>
-					<h2>Slides</h2>
-					<p>
-						Not a coder? No problem. There's a fully-featured visual editor for authoring these, try it out at <a href="http://slid.es" target="_blank">http://slid.es</a>.
-					</p>
+						This sounds like something we could benefit from...
+
+					</aside>
 				</section>
+				<section data-background="#ffffff">
+					<img style="border:0;background:none;" src="http://127.0.0.1:8000/img/dif.gif">
+					<aside class="notes">
+						2. What is disrupting....
+						
+						Over the last 5 years Git has emerged as the version control system of choice. 
 
-				<section>
-					<h2>Point of View</h2>
-					<p>
-						Press <strong>ESC</strong> to enter the slide overview.
-					</p>
-					<p>
-						Hold down alt and click on any element to zoom in on it using <a href="http://lab.hakim.se/zoom-js">zoom.js</a>. Alt + click anywhere to zoom back out.
-					</p>
+						Not only has it become popular amongst the IT world - it has become a growing platform for collaboration across non-it professionals. The City of Chicago for example has released a series of data openly via GitHub.
+
+						But how is this brave new world effecting our traditional world and how might it help us?
+
+						Well, companies like GitHub are now able to store and version control certain types of spatial data. In the example behind me you can see how you can visualise changes in geojson data committed to github.
+
+					</aside>
 				</section>
+				<section data-background="http://127.0.0.1:8000/img/geogit.png">
+					<!--<img style="border:0;background:none;" src="http://127.0.0.1:8000/img/geogit.png">-->
+					<aside class="notes">
+						3. What might the future look like
+						
+						Arhhh I hear you say, but that's not good enough.....
 
-				<section>
-					<h2>Works in Mobile Safari</h2>
-					<p>
-						Try it out! You can swipe through the slides and pinch your way to the overview.
-					</p>
+						Well the young GeoGit project being spearheaded by Boundless 
+
+					</aside>
 				</section>
-
-				<section>
-					<h2>Marvelous Unordered List</h2>
-					<ul>
-						<li>No order here</li>
-						<li>Or here</li>
-						<li>Or here</li>
-						<li>Or here</li>
-					</ul>
-				</section>
-
-				<section>
-					<h2>Fantastic Ordered List</h2>
-					<ol>
-						<li>One is smaller than...</li>
-						<li>Two is smaller than...</li>
-						<li>Three!</li>
-					</ol>
-				</section>
-
-				<section data-markdown>
-					<script type="text/template">
-						## Markdown support
-
-						For those of you who like that sort of thing. Instructions and a bit more info available [here](https://github.com/hakimel/reveal.js#markdown).
-
-						```
-						<section data-markdown>
-						  ## Markdown support
-
-						  For those of you who like that sort of thing.
-						  Instructions and a bit more info available [here](https://github.com/hakimel/reveal.js#markdown).
-						</section>
-						```
-					</script>
-				</section>
-
-				<section id="transitions">
-					<h2>Transition Styles</h2>
-					<p>
-						You can select from different transitions, like: <br>
-						<a href="?transition=cube#/transitions">Cube</a> -
-						<a href="?transition=page#/transitions">Page</a> -
-						<a href="?transition=concave#/transitions">Concave</a> -
-						<a href="?transition=zoom#/transitions">Zoom</a> -
-						<a href="?transition=linear#/transitions">Linear</a> -
-						<a href="?transition=fade#/transitions">Fade</a> -
-						<a href="?transition=none#/transitions">None</a> -
-						<a href="?#/transitions">Default</a>
-					</p>
-				</section>
-
-				<section id="themes">
-					<h2>Themes</h2>
-					<p>
-						Reveal.js comes with a few themes built in: <br>
-						<a href="?#/themes">Default</a> -
-						<a href="?theme=sky#/themes">Sky</a> -
-						<a href="?theme=beige#/themes">Beige</a> -
-						<a href="?theme=simple#/themes">Simple</a> -
-						<a href="?theme=serif#/themes">Serif</a> -
-						<a href="?theme=night#/themes">Night</a> <br>
-						<a href="?theme=moon#/themes">Moon</a> -
-						<a href="?theme=solarized#/themes">Solarized</a>
-					</p>
-					<p>
-						<small>
-							* Theme demos are loaded after the presentation which leads to flicker. In production you should load your theme in the <code>&lt;head&gt;</code> using a <code>&lt;link&gt;</code>.
-						</small>
-					</p>
-				</section>
-
-				<section>
-					<h2>Global State</h2>
-					<p>
-						Set <code>data-state="something"</code> on a slide and <code>"something"</code>
-						will be added as a class to the document element when the slide is open. This lets you
-						apply broader style changes, like switching the background.
-					</p>
-				</section>
-
-				<section data-state="customevent">
-					<h2>Custom Events</h2>
-					<p>
-						Additionally custom events can be triggered on a per slide basis by binding to the <code>data-state</code> name.
-					</p>
-					<pre><code data-trim contenteditable style="font-size: 18px; margin-top: 20px;">
-Reveal.addEventListener( 'customevent', function() {
-	console.log( '"customevent" has fired' );
-} );
-					</code></pre>
-				</section>
-
-				<section>
-					<section data-background="#007777">
-						<h2>Slide Backgrounds</h2>
-						<p>
-							Set <code>data-background="#007777"</code> on a slide to change the full page background to the given color. All CSS color formats are supported.
-						</p>
-						<a href="#" class="image navigate-down">
-							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-						</a>
-					</section>
-					<section data-background="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png">
-						<h2>Image Backgrounds</h2>
-						<pre><code>&lt;section data-background="image.png"&gt;</code></pre>
-					</section>
-					<section data-background="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" data-background-repeat="repeat" data-background-size="100px">
-						<h2>Repeated Image Backgrounds</h2>
-						<pre><code style="word-wrap: break-word;">&lt;section data-background="image.png" data-background-repeat="repeat" data-background-size="100px"&gt;</code></pre>
-					</section>
-				</section>
-
-				<section data-transition="linear" data-background="#4d7e65" data-background-transition="slide">
-					<h2>Background Transitions</h2>
-					<p>
-						Pass reveal.js the <code>backgroundTransition: 'slide'</code> config argument to make backgrounds slide rather than fade.
-					</p>
-				</section>
-
-				<section data-transition="linear" data-background="#8c4738" data-background-transition="slide">
-					<h2>Background Transition Override</h2>
-					<p>
-						You can override background transitions per slide by using <code>data-background-transition="slide"</code>.
-					</p>
-				</section>
-
-				<section>
-					<h2>Clever Quotes</h2>
-					<p>
-						These guys come in two forms, inline: <q cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-						&ldquo;The nice thing about standards is that there are so many to choose from&rdquo;</q> and block:
-					</p>
-					<blockquote cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-						&ldquo;For years there has been a theory that millions of monkeys typing at random on millions of typewriters would
-						reproduce the entire works of Shakespeare. The Internet has proven this theory to be untrue.&rdquo;
-					</blockquote>
-				</section>
-
-				<section>
-					<h2>Pretty Code</h2>
-					<pre><code data-trim contenteditable>
-function linkify( selector ) {
-  if( supports3DTransforms ) {
-
-    var nodes = document.querySelectorAll( selector );
-
-    for( var i = 0, len = nodes.length; i &lt; len; i++ ) {
-      var node = nodes[i];
-
-      if( !node.className ) {
-        node.className += ' roll';
-      }
-    }
-  }
-}
-					</code></pre>
-					<p>Courtesy of <a href="http://softwaremaniacs.org/soft/highlight/en/description/">highlight.js</a>.</p>
-				</section>
-
-				<section>
-					<h2>Intergalactic Interconnections</h2>
-					<p>
-						You can link between slides internally,
-						<a href="#/2/3">like this</a>.
-					</p>
-				</section>
-
-				<section>
-					<section id="fragments">
-						<h2>Fragmented Views</h2>
-						<p>Hit the next arrow...</p>
-						<p class="fragment">... to step through ...</p>
-						<ol>
-							<li class="fragment"><code>any type</code></li>
-							<li class="fragment"><em>of view</em></li>
-							<li class="fragment"><strong>fragments</strong></li>
-						</ol>
-
-						<aside class="notes">
-							This slide has fragments which are also stepped through in the notes window.
-						</aside>
-					</section>
-					<section>
-						<h2>Fragment Styles</h2>
-						<p>There's a few styles of fragments, like:</p>
-						<p class="fragment grow">grow</p>
-						<p class="fragment shrink">shrink</p>
-						<p class="fragment roll-in">roll-in</p>
-						<p class="fragment fade-out">fade-out</p>
-						<p class="fragment highlight-red">highlight-red</p>
-						<p class="fragment highlight-green">highlight-green</p>
-						<p class="fragment highlight-blue">highlight-blue</p>
-						<p class="fragment current-visible">current-visible</p>
-						<p class="fragment highlight-current-blue">highlight-current-blue</p>
-					</section>
-				</section>
-
-				<section>
-					<h2>Spectacular image!</h2>
-					<a class="image" href="http://lab.hakim.se/meny/" target="_blank">
-						<img width="320" height="299" src="http://s3.amazonaws.com/hakim-static/portfolio/images/meny.png" alt="Meny">
-					</a>
-				</section>
-
-				<section>
-					<h2>Export to PDF</h2>
-					<p>Presentations can be <a href="https://github.com/hakimel/reveal.js#pdf-export">exported to PDF</a>, below is an example that's been uploaded to SlideShare.</p>
-					<iframe id="slideshare" src="http://www.slideshare.net/slideshow/embed_code/13872948" width="455" height="356" style="margin:0;overflow:hidden;border:1px solid #CCC;border-width:1px 1px 0;margin-bottom:5px" allowfullscreen> </iframe>
-					<script>
-						document.getElementById('slideshare').attributeName = 'allowfullscreen';
-					</script>
-				</section>
-
-				<section>
-					<h2>Take a Moment</h2>
-					<p>
-						Press b or period on your keyboard to enter the 'paused' mode. This mode is helpful when you want to take distracting slides off the screen
-						during a presentation.
-					</p>
-				</section>
-
-				<section>
-					<h2>Stellar Links</h2>
-					<ul>
-						<li><a href="http://slid.es">Try the online editor</a></li>
-						<li><a href="https://github.com/hakimel/reveal.js">Source code on GitHub</a></li>
-						<li><a href="http://twitter.com/hakimel">Follow me on Twitter</a></li>
-					</ul>
-				</section>
-
-				<section>
-					<h1>THE END</h1>
-					<h3>BY Hakim El Hattab / hakim.se</h3>
-				</section>
-
 			</div>
 
 		</div>
