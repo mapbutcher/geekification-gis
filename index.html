@@ -46,6 +46,9 @@
 				<section data-background="http://mapbutcher.github.io/geekification-gis/img/graysonperry.jpg">   
 					<aside class="notes">
 						I have an admission to make - this presentation was inspired by a tranvestite potter from Essex.
+
+						Last year the english artist Grayson Perry gave a series of lectures for the BBC called the Reith lectures. In one of his lectures he explored the boundaries of what is and isn't art. Listening to the lecture I thought to myself can I honestly continue to say that I work in GIS - It made we want to explore the boundaries of GIS.
+
 					</aside>
 				</section>
 				<section>
@@ -79,7 +82,7 @@
 					<ol>
 						<li><p>Search</p></li>
 						<li><p>Change</p></li>
-						<li><p>Mapping</p></li>
+						<li><p>Maps Online</p></li>
 					</ol>
 
 					<aside class="notes">
@@ -106,7 +109,6 @@
 				<section data-background="http://mapbutcher.github.io/geekification-gis/img/wally.jpg">
 					<p class="fragment" style="background:white; border-radius:25px;">&ldquo; ...web map interfaces tend to be bloated with all manner of content and functionality that distract and hinder the user from carrying out their primary intention of information retrieval.&rdquo; </br> - Brian Timoney (March 2013)</p>
 					<aside class="notes">
-						1. What does the traditional view look like?
 
 						It's quite ironic that Maps are meant to help us find things more easily. The current landscape of GIS applications and 'spatial data catalogues' fail miserably at providing useful search capabilities. They remind me of reading Where's Wally books to my kids.......frustrating.
 
@@ -118,7 +120,6 @@
 					<h2 class="em" style="padding-left:450px;">Spatial databases are good for spatial data.</h2>
 					<p></p>
 					<aside class="notes">
-						1. What does the traditional view look like?
 
 						Our traditional way of searching has focussed on searching the data sources that underpin our maps.But what if we think about it differently. What is we ask ourselves the question what's the best environment to put our data into to make it easier to search our data. Where would we look?
 
@@ -134,7 +135,6 @@
 				<section data-background="http://mapbutcher.github.io/geekification-gis/img/elastic.jpg">
 					<p><img style="border:0;background:none;" src="http://mapbutcher.github.io/geekification-gis/img/elasticsearch.png"></p>
 					<aside class="notes">
-						2. What is disrupting
 
 						Over the past year at Geoplex we've been using Elasticsearch to support search requirements
 
@@ -148,7 +148,6 @@
 					<h2 class="em">Geo.....power</h2>
 					<img style="border:0;background:none;" src="http://mapbutcher.github.io/geekification-gis/img/elasticgeo.png">	
 					<aside class="notes">
-						2. What is disrupting....
 
 						Furthermore
 
@@ -162,7 +161,6 @@
 				<section data-background="http://mapbutcher.github.io/geekification-gis/img/charlton.jpg">
 					<h2 class="em" style="padding-right:400px; color:black;">"I'll give you my 'geodatabase' when you pry it from my cold dead hands!"</h2>
 					<aside class="notes">
-						3. What might the future look like
 
 						Well I know those in the old guard might be thinking to themselves....you'll not get rid of those spatial databases. However the future is no longer neatly locked into a single stack of technology.
 
@@ -182,7 +180,6 @@
 					<h2 class="em" style="padding-bottom:200px;">The Great Divide.</h2>
 					<p></p>
 					<aside class="notes">
-						1. What does the traditional view look like?
 						
 						We work with alot of organisations which want to know what's changed, when and by who. However this sort of requirement has traditionally been met by big expensive solutions.
 
@@ -196,7 +193,6 @@
 					<h2>Please don't do this at home....</h2>
 					<img style="border:0;background:none;" src="http://mapbutcher.github.io/geekification-gis/img/versioncontrol.png">
 					<aside class="notes">
-						2. What is disrupting
 
 						So what's changing?
 						
@@ -212,7 +208,6 @@
 					<h2>Map Diffing in GitHub</h2>
 					<img style="border:0;background:none;" src="http://mapbutcher.github.io/geekification-gis/img/dif.gif">
 					<aside class="notes">
-						2. What is disrupting....
 						
 						Over the last 5 years Git has emerged as the version control system of choice. 
 
@@ -227,7 +222,6 @@
 				<section data-background="http://mapbutcher.github.io/geekification-gis/img/geogit.png">
 					<!--<img style="border:0;background:none;" src="http://mapbutcher.github.io/geekification-gis/img/geogit.png">-->
 					<aside class="notes">
-						3. What might the future look like
 						
 						GeoJson and Github might be just the first step on our journey towards a brighter future where we can have manage change in our spatial data more easily and cost effectively.
 
@@ -238,7 +232,7 @@
 					</aside>
 				</section>
 				<section>
-					<h2 class="em">Marker No. 3. Mapping</h2>
+					<h2 class="em">Marker No. 3. Maps Online</h2>
 					<p></p>
 					<aside class="notes">
 						SECTION INTRO SLIDE						
@@ -248,7 +242,6 @@
 					<h2 class="em" style="padding-left:450px;"></h2>
 					<p></p>
 					<aside class="notes">
-						1. What does the traditional view look like?
 
 						It's a crowded space out there in the mapping world. Ask Rohan :)
 
@@ -262,29 +255,39 @@
 				</section>	
 				<section>
 					<h2>CartoDB</h2>
-					<iframe width='100%' height='520' frameborder='0' src='http://cartodb.s3.amazonaws.com/static_vizz/sb14.html'></iframe>
+					<iframe width='100%' height='800px' frameborder='0' src='http://viz2.cartodb.com/viz/70bc854e-68fc-11e3-8e22-0e49973114de/embed_map?title=true&description=true&search=false&shareable=false&cartodb_logo=true&layer_selector=false&legends=false&scrollwheel=true&sublayer_options=1%7C1&sql=&zoom=4&center_lat=38.063924198120645&center_lon=-95.625'></iframe>
 					<aside class="notes">
-						2. What is disrupting
 
 						CartoDB has packaged the power of PostGIS into an interface where you can easily load spatial data and create powerful visualisations within a few clicks, and importantly they are doing so at a price point which disrupts the traditional model.
 
-						....
+						The map behind me shows the spread of the American Post Office network over a 10 second period...representing just under 400 years.
 						
 					</aside>
 				</section>
-				<section>
-					<h2>Your data, the way you like it...at scale</h2>
+				<section data-background="/img/evolution.jpg">
 					<aside class="notes">
-						2. What is disrupting
+						One of the most disruptive features of CartoDB is arguably not it's most obvious. 
 
+						The idea of creating map tiles is not exactly new. Ever since Google reinvented web mapping in 2005 we've been caching map tiles left, right and centre. But the accepted mantra during this period has been only cache what doesn't change - now whilst this is still true in many cases, it's no longer a universal truth. 
 
+						CartoDB, allows you to create map tiles on demand which are dynamic - what do I mean by dynamic? Well I can request a map, choosing what features are displayed and how they are displayed - all at runtime.
 
+						This is not new! I hear you cry - No you're right this is how all map servers essentially work - but what's new about it is that it works at scale, online and its affordable. This is essentially the evolution of online mapping
 						
 					</aside>
 				</section>
 				<section>
+					<iframe width='100%' height='800px' frameborder='0' src="https://www.mapbox.com/bites/00009/"></iframe>
 					<aside class="notes">
 						3. What might the future look like
+
+						This one's far too hard to call! But I can't stand up here without putting my neck on the line so here goes...
+
+						1. I think we'll be revisiting our text books and trying to remember what raster analysis was all about, only this time we'll be able to do it online, in the browser - Like this excellent example from Mapbox which shows browser based dynamic hillshading.
+
+						2. With solutions like CartoDB finally the ultimate goodies in the spatial database toolbox are being let out - so I think we'll see spatial operators become a first class language.
+
+						3. ...
 
 
 
