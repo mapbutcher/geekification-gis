@@ -40,14 +40,14 @@ What is disrupting the marker?
 
 What might the future look like
 
-## Slide 5 - Spatial databases are good for spatial data
+## Slide 5 - Wally
 
 It's quite ironic that Maps are meant to help us find things more easily. The current landscape of GIS applications and 'spatial data catalogues' tend to fail at providing useful search capabilities. They remind me of reading Where's Wally books to my kids.......frustrating.
 
 Imagine if everything on our maps was searchable?
 
 
-## Slide  - Matching expectations
+## Slide 6 - Spatial databases are good for spatial data
 
 Our traditional way of searching has focussed on searching the data sources that underpin our maps. But what if we think about it differently. What is we ask ourselves the question what's the best environment to put our data into to make it easier to search our data. Where would we look?
 
@@ -57,7 +57,15 @@ Most spatial search seems to begin by assuming the audient knows what they want 
 
 Are we using the right tool for the job?
 
-## Slide 7 - Geo-Power
+## Slide 7 - Matching expectations
+
+Over the past year at Geoplex we've been using Elasticsearch to support search requirements
+
+Elasticsearch is a document orientated search engine based upon the Apache Lucence project. It supports both unstructured and structured search and importantly does so in near real time!
+
+By using elasticsearch we're able to meet the expectations of our user base, we're enabling search in our applications which matches the search experience they encounter elsewhere on the internet.
+
+## Slide 8 - Geo-Power
 
 Furthermore
 
@@ -65,9 +73,11 @@ Being able to combine free text search with geo location is the crucial next ste
 
 Elasticsearch now includes support for spatial datatypes. Not only can we ask for information based upon an attribute of that information, but we can ask for information based upon where it exists.
 
-Now you could argue - this is not really disruptive, we've been searching for things spatially for years, yes but our executions have not been targeting our audiences expectations.
+Now you could argue - this is not really disruptive, we've been searching for things spatially for years
 
-## Slide 8 - I'll give you my 'geodatabase' when you pry it from my cold dead hands!
+...but our executions have not been targeting our audiences expectations, this is where technology like Elasticsearch has a role to play. What we are learning is that the solutions like Elasticsearch which have been built for indexing and searching millions of log records also have an application when it comes to indexing and searching millions of geo events.
+
+## Slide 9 - I'll give you my 'geodatabase' when you pry it from my cold dead hands!
 
 Well I know those in the old guard might be thinking to themselves....you'll not get rid of those spatial databases, but where those spatial databases live may well be challenged - how we manage databases and what we consider to be our storage options is changing. The release of Postresql & PostGIS in Amazon's RDS is a great step forward. 
 
@@ -77,25 +87,23 @@ The future involves more and more data! And as the volume of our data increases 
 
 We need to understand what tools best fit our requirements. We're backing search technology, not GIS technology when it comes to searching!
 
-## Slide 9 - The Great Divide.
+## Slide 10 - The Great Divide.
 
 We work with alot of organisations which want to know what's changed, when and by who. However this sort of requirement has traditionally been met by big expensive solutions.
 
 In my first job as a GIS Analyst we used to 'Merge and Post' overnight a long drawn out reconciliation of changes made across all the GIS editors in the organisation.
 
-These version management solutions have remained the realm of those with deep pockets, and the rest of us have just cobbled along...until.
+These large version management solutions like Smallworld merge and post of Esri's ArcSDE have remained the realm of those with deep pockets. Meanwhile many organisations have shy'd away from their cost and complexity and gone without at a further cost. This essentially represents the great divide of change management in GIS today.
 
-## Slide  - Please don't do this at home....
+## Slide 11 - Please don't do this at home....
 
-So what's changing?
-
-Software engineers had been using this thing called version control for quite some time to manage source code. 
+So what's changing? Well if we step outside our little world for a moment and look into the software development world we'll notive that Software engineers had been using this thing called version control for quite some time to manage source code. 
 
 Multiple people could edit source code files at the same time and a system would track all these changes as well as provide ways to manage conflict resolution where conflicting changes occurred to the same file.
 
 This sounds like something we could benefit from...
 
-## Slide 11 - Map Diffing in GitHub
+## Slide 12 - Map Diffing in GitHub
 
 Over the last 5 years Git has emerged as the version control system of choice. 
 
@@ -105,15 +113,15 @@ But how is this brave new world effecting our traditional world and how might it
 
 Well, companies like GitHub are now able to store and version control certain types of spatial data. In the example behind me you can see how you can visualise changes in geojson data committed to github.
 
-## Slide 12 - Geogit
+## Slide 13 - Geogit
 
-GeoJson and Github might be just the first step on our journey towards a brighter future where we can have manage change in our spatial data more easily and cost effectively.
+GeoJson and Github might be just the first step on our journey towards a brighter future where we can manage change in our spatial data more easily and cost effectively.
 
 I think one of the most exciting projects in this space is the GeoGit project being spearheaded by Boundless. 
 
 Boundless have essentially created a branch of Git which allows you to commit a wider range of spatial data formats, such as Shapefile, PostGIS and SQL Server. Once committed into your GeoGit repository the data is tracked at the feature level. Any committed version can be differnced and exported. 
 
-## Slide 13 - Crowded Space					
+## Slide 14 - Crowded Space					
 
 It's a crowded space out there in the mapping world. Ask Rohan :)
 
@@ -123,13 +131,13 @@ Does the crowd mean it can't be disrupted? Of course not, in my next example we'
 
 These three factors are: Cost, Ease, Power
 
-## Slide 14 - CartoDB
+## Slide 15 - CartoDB
 
 CartoDB has packaged the power of PostGIS into an interface where you can easily load spatial data and create powerful visualisations within a few clicks, and importantly they are doing so at a price point which disrupts the traditional model.
 
 The map behind me shows the spread of the American Post Office network over a 10 second period...representing just under 400 years.
 
-## Slide 15 - Incremental Innovation
+## Slide 16 - Incremental Innovation
 
 One of the most disruptive features of CartoDB is arguably not it's most obvious.
 
@@ -139,30 +147,32 @@ CartoDB, allows you to create map tiles on demand which are dynamic - what do I 
 
 This is not new! I hear you cry - No you're right this is how all map servers essentially work - but what's new about it is that it works at scale, online and its affordable. This is essentially the evolution of online mapping
 
-## Slide 16 What's next?
+## Slide 17 What's next?
 
 This one's far too hard to call! But I can't stand up here without putting my neck on the line so here goes...
 
 1. I think we'll be revisiting our text books and trying to remember what raster analysis was all about, only this time we'll be able to do it online, in the browser - Like this excellent example from Mapbox which shows browser based dynamic hillshading.
 
-2. With solutions like CartoDB finally the ultimate goodies in the spatial database toolbox are being let out - so I think we'll see spatial operators become a first class language.
+2. With solutions like CartoDB finally the ultimate goodies in the spatial database toolbox are being let out - so I think we'll see spatial operators become a first class language. What I mean by that is that the wider world will become much more familiar with the classic spatial relations we know and love.
 
-3. The visualisation revolution will continue - our perception of who is qualified to make maps will continue to be challenged by people creating maps elsewhere. 
+3. The visualisation revolution will continue - our perception of who is qualified to make maps will continue to be challenged by people creating maps outside of thr GIS world. This is particularly being driven by the boom in data science.
 
 So before we conclude our journey around the boundaries of GIS, lets just briefly ask the question:
 
 Why are the boundaries of GIS being blurred? Well I think there are two key reasons:
 
 
-## Slide 17 - Digital Natives
+## Slide 18 - Digital Natives
 
 The first reason is the ever increasing population of digitial natives. It is arguably the combination of digital natives with an entrepreneurial appetite which is leading to innovation in our industry and I for one think this is a really positive thing.
 
 
-## Slide 16 - The Enabler
+## Slide 19 - The Enabler
 
 The second reason is the maturity of open source technology as an enabler - in each of the examples given this afternoon, open source has played a vital role. Elasticsearch wouldn't exist without Lucene, Github without Git and finally CartoDB without PostGIS and Mapnik. 
 
 A closed proprietary eco-system is not devoid of innovation, but the geekification of GIS is flourishing under the influence of open source. 
+
+I hope you've enjoyed out very brief tour around the boundaries of GIS and I hope you agree with me when I say that the future for spatial technology and data is very exciting indeed.
 
 
